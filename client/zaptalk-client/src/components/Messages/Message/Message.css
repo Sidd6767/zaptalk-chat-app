@@ -1,0 +1,166 @@
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.messageBox {
+  max-width: 70%;
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-xl);
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid transparent;
+}
+
+.messageText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  color: inherit;
+}
+
+.messageText img {
+  vertical-align: middle;
+}
+
+.sentText {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* User's own messages */
+.justifyEnd {
+  align-items: flex-end;
+}
+
+.justifyEnd .messageBox {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-bottom-right-radius: var(--radius-md);
+}
+
+.justifyEnd .messageBox::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--primary-color);
+  border-bottom: 8px solid transparent;
+}
+
+.justifyEnd .sentText {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: right;
+}
+
+/* Other users' messages */
+.justifyStart {
+  align-items: flex-start;
+}
+
+.justifyStart .messageBox {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: var(--radius-md);
+}
+
+.justifyStart .messageBox::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid var(--surface);
+  border-bottom: 8px solid transparent;
+}
+
+.justifyStart .sentText {
+  color: var(--text-light);
+  text-align: left;
+}
+
+/* Admin messages */
+.messageBox.admin {
+  background: var(--surface-hover);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  font-style: italic;
+  font-size: 0.875rem;
+  margin: 0.5rem auto;
+  max-width: 80%;
+}
+
+.messageBox.admin::after {
+  display: none;
+}
+
+/* Hover effects */
+.messageBox:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Legacy class support */
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: var(--text-primary);
+}
+
+.backgroundBlue {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.backgroundLight {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+}
+
+.pl-10 {
+  padding-left: 0.75rem;
+}
+
+.pr-10 {
+  padding-right: 0.75rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .messageBox {
+    max-width: 85%;
+    padding: 0.75rem 1rem;
+  }
+
+  .messageText {
+    font-size: 0.9rem;
+  }
+
+  .sentText {
+    font-size: 0.7rem;
+  }
+}

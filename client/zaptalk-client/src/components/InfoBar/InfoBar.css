@@ -1,0 +1,137 @@
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.infoBar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  pointer-events: none;
+}
+
+.leftInnerContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.leftInnerContainer h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rightInnerContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.rightInnerContainer a {
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.rightInnerContainer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.closeButton svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+}
+
+.onlineIndicator {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+}
+
+.onlineIndicator::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .infoBar {
+    padding: 0 1rem;
+    height: 60px;
+  }
+
+  .leftInnerContainer h3 {
+    font-size: 1.1rem;
+  }
+
+  .onlineIndicator {
+    width: 6px;
+    height: 6px;
+    margin-right: 0.5rem;
+  }
+
+  .onlineIndicator::before {
+    width: 6px;
+    height: 6px;
+  }
+
+  .closeButton svg {
+    width: 14px;
+    height: 14px;
+  }
+}
