@@ -25,6 +25,10 @@ URL- https://zaptalk-chat.netlify.app/
 - **Deployment**: Netlify (Frontend), Render (Backend)
 
 ---
+## 📸 Screenshots
+
+<img width="1913" height="975" alt="image" src="https://github.com/user-attachments/assets/0d6903df-2e83-40d8-8440-066becabe79c" />
+<img width="1917" height="973" alt="image" src="https://github.com/user-attachments/assets/46c1005b-d6a0-40f8-922b-9168c6cdd989" />
 
 ## 📦 Future Improvements (Optional Ideas)
 
@@ -37,9 +41,6 @@ URL- https://zaptalk-chat.netlify.app/
 
 ---
 
-## 📸 Screenshots
 
-<img width="1913" height="975" alt="image" src="https://github.com/user-attachments/assets/0d6903df-2e83-40d8-8440-066becabe79c" />
-<img width="1917" height="973" alt="image" src="https://github.com/user-attachments/assets/46c1005b-d6a0-40f8-922b-9168c6cdd989" />
 
 
