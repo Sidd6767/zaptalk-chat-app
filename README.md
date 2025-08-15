@@ -1,7 +1,7 @@
 # ⚡ ZapTalk – Realtime Chat Application
 
 A modern fullstack chat app enabling users to engage in live conversations through dynamic chat rooms. Built using **React**, **Express**, **Node.js**, and **Socket.IO**, ZapTalk delivers a smooth, real-time messaging experience with a responsive and intuitive interface.
-
+Link- https://zaptalk-chat.netlify.app/
 ---
 
 ## 🚀 Features
@@ -38,7 +38,7 @@ A modern fullstack chat app enabling users to engage in live conversations throu
 
 ## 📸 Screenshots
 
-<img width="1852" height="974" alt="image" src="https://github.com/user-attachments/assets/d11d7eda-c461-41ea-8d9b-0edf3a6771f1" />
-<img width="1861" height="919" alt="image" src="https://github.com/user-attachments/assets/3c9b8282-ebf7-43c8-8958-d68c5b6a7c9c" />
+<img width="1913" height="975" alt="image" src="https://github.com/user-attachments/assets/0d6903df-2e83-40d8-8440-066becabe79c" />
+<img width="1917" height="973" alt="image" src="https://github.com/user-attachments/assets/46c1005b-d6a0-40f8-922b-9168c6cdd989" />
 
 
