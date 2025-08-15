@@ -32,7 +32,8 @@ function Chat() {
     }
 
 socket.current = io(ENDPOINT, {
-  transports: ['polling']
+  transports: ['polling'],
+  timeout: 30000
 });
     setName(name);
     setRoom(room);
