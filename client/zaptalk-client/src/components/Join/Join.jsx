@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
-import "./Join.css";
+import './Join.css';
 
 function Join() {
   const [name, setName] = useState("");
@@ -97,3 +97,4 @@ function Join() {
 }
 
 export default Join;
+

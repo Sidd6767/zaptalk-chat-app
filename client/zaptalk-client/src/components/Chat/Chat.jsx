@@ -20,7 +20,7 @@ function Chat() {
   const socket = useRef(); // Persistent socket reference
   const location = useLocation();
 
-  const ENDPOINT = "https://zaptalk-chat-app.onrender.com";
+  const ENDPOINT = "http://localhost:5000";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
