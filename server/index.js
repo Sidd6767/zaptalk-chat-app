@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: "https://zaptalk-chat.netlify.app/", // Vite actual port
+    origin: "https://689f4a71391bf53ae79961be--zaptalk-chat.netlify.app/", // Vite actual port 
     methods: ["GET", "POST"]
   }
 });
